@@ -46,6 +46,10 @@ else:
             val = val.replace(",", "").replace("(", "").replace(")", "")
             opex[item] = int(val)
 
+abr_items = ["R&D", "SGA", "Amortization"] # Shorten items and get rid of whitespace.
+for i in range(len(abr_items)):
+    opex[abr_items[i]] = opex[expense_items[i]]
+    del opex[expense_items[i]]
+
 for k, v in opex.items():
-    k = k.replace(" ","_") 
     print(k , v)
