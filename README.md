@@ -1,5 +1,7 @@
 # Company Financials
 
+A financial analysis tool using NXP Semiconductors (NASDAQ: NXPI) as an example. Extracts operating expenses from SEC filings and displays them in a formatted table.
+
 ## How to Run
 
 1. Activate virtual environment:
